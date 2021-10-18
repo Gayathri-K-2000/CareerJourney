@@ -1,0 +1,364 @@
+''' Top 3 jobroles match in each grade from source grade to destination grade of the jobroles based on skills and competency. '''
+
+POST https://newcareerjourney.herokuapp.com/path
+
+Request:
+Parameters--
+sourcejobid 164
+targetjobid 791
+flag 1    (0- notinpskills as json, 1- haveinpskills as json)
+
+Json Body
+Skills{}
+
+Response:
+{
+    "output": [
+        {
+            "grade": "2",
+            "results": [
+                {
+                    "CommonSkills": "0",
+                    "JobId": "164",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 0,
+                    "MatchSkillsScore": 0,
+                    "Position": "Ground Services Officer",
+                    "Sector": "Air Transport"
+                }
+            ]
+        },
+        {
+            "grade": 2,
+            "results": [
+                {
+                    "CommonSkills": [],
+                    "JobId": "795",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 0,
+                    "MatchSkillsScore": 0.0,
+                    "Position": "Production Operator",
+                    "Sector": "Food Manufacturing"
+                }
+            ]
+        },
+        {
+            "grade": 3,
+            "results": [
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Advanced Processing Technology ",
+                        "Food Production Management ",
+                        "Food Safety Management ",
+                        "Automated Operation Monitoring ",
+                        "Quality System Management ",
+                        "Emergency Response Management ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Internet of Things Management ",
+                        "WSH Performance Management ",
+                        "Automated Food Manufacturing System Maintenance "
+                    ],
+                    "JobId": "796",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 13,
+                    "MatchSkillsScore": 0.5652173913043478,
+                    "Position": "Section Head/Team Leader/Line Operator",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Advanced Processing Technology ",
+                        "Food Safety Management ",
+                        "Automated Operation Monitoring ",
+                        "Quality System Management ",
+                        "Emergency Response Management ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Internet of Things Management ",
+                        "WSH Performance Management ",
+                        "Automated Food Manufacturing System Maintenance "
+                    ],
+                    "JobId": "792",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 12,
+                    "MatchSkillsScore": 0.5,
+                    "Position": "Process Technician/Maintenance Technician",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Advanced Processing Technology ",
+                        "Food Safety Management ",
+                        "Automated Operation Monitoring ",
+                        "Quality System Management ",
+                        "Emergency Response Management ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Internet of Things Management ",
+                        "WSH Performance Management ",
+                        "Automated Food Manufacturing System Maintenance "
+                    ],
+                    "JobId": "793",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 12,
+                    "MatchSkillsScore": 0.35294117647058826,
+                    "Position": "Assistant Engineer/Assistant Maintenance Mana",
+                    "Sector": "Food Manufacturing"
+                }
+            ]
+        },
+        {
+            "grade": 4,
+            "results": [
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Document Control ",
+                        "Equipment Maintenance ",
+                        "Internet of Things Management ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Automation Process Control ",
+                        "Manufacturing Process Management ",
+                        "Advanced Processing Technology ",
+                        "Food Safety Management ",
+                        "Automated Operation Monitoring ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Conflict Resolution ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Automated Food Manufacturing System Maintenance ",
+                        "Technical Report Writing ",
+                        "Quality System Management ",
+                        "Project Management ",
+                        "Stakeholder Management ",
+                        "WSH Performance Management "
+                    ],
+                    "JobId": "794",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 21,
+                    "MatchSkillsScore": 0.5121951219512195,
+                    "Position": "Engineer/Engineering Manager/Maintenance Man",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Document Control ",
+                        "Internet of Things Management ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Production Performance Management ",
+                        "Manufacturing Process Management ",
+                        "Advanced Processing Technology ",
+                        "Food Safety Management ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Conflict Resolution ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Food Production Management ",
+                        "Technical Report Writing ",
+                        "Quality System Management ",
+                        "Project Management ",
+                        "Stakeholder Management ",
+                        "WSH Performance Management "
+                    ],
+                    "JobId": "798",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 19,
+                    "MatchSkillsScore": 0.59375,
+                    "Position": "Production Manager",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Advanced Processing Technology ",
+                        "Document Control ",
+                        "Food Safety Management ",
+                        "Technical Report Writing ",
+                        "Quality System Management ",
+                        "Project Management ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Conflict Resolution ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Stakeholder Management ",
+                        "Active and Smart Packaging ",
+                        "Good Manufacturing Practices Implementation ",
+                        "WSH Performance Management "
+                    ],
+                    "JobId": "808",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 15,
+                    "MatchSkillsScore": 0.45454545454545453,
+                    "Position": "Food Technologist",
+                    "Sector": "Food Manufacturing"
+                }
+            ]
+        },
+        {
+            "grade": 5,
+            "results": [
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Budgeting ",
+                        "Document Control ",
+                        "Embedded System Integration ",
+                        "Equipment Maintenance ",
+                        "Internet of Things Management ",
+                        "New Product Introduction for Food ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Automation Process Control ",
+                        "Green Manufacturing Design and Implementation ",
+                        "Strategy Development ",
+                        "Automated System Design ",
+                        "Manufacturing Process Management ",
+                        "Advanced Processing Technology ",
+                        "Business Negotiation ",
+                        "Food Safety Management ",
+                        "Technical Presentation ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Conflict Resolution ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Automated Food Manufacturing System Maintenance ",
+                        "Business Networking ",
+                        "Risk Management ",
+                        "Business Performance Management ",
+                        "Data Synthesis ",
+                        "Food Manufacturing Facility Maintenance ",
+                        "Innovation Management ",
+                        "Quality System Management ",
+                        "Change Management ",
+                        "Project Management ",
+                        "Data Analytics System Design ",
+                        "Stakeholder Management ",
+                        "Food Manufacturing Process Design ",
+                        "WSH Performance Management ",
+                        "Business Continuity Management "
+                    ],
+                    "JobId": "799",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 37,
+                    "MatchSkillsScore": 0.9024390243902439,
+                    "Position": "Director of Operations/Plant Manager",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Budgeting ",
+                        "Document Control ",
+                        "New Product Introduction for Food ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Green Manufacturing Design and Implementation ",
+                        "Strategy Development ",
+                        "Advanced Processing Technology ",
+                        "Food Safety Management ",
+                        "Technical Presentation ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Active and Smart Packaging ",
+                        "Conflict Resolution ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Risk Management ",
+                        "Process Validation ",
+                        "Business Performance Management ",
+                        "Data Synthesis ",
+                        "Innovation Management ",
+                        "Technical Report Writing ",
+                        "Quality System Management ",
+                        "Change Management ",
+                        "Project Management ",
+                        "Data Analytics System Design ",
+                        "Stakeholder Management ",
+                        "Food Manufacturing Process Design ",
+                        "WSH Performance Management ",
+                        "Business Continuity Management "
+                    ],
+                    "JobId": "811",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 29,
+                    "MatchSkillsScore": 0.7837837837837838,
+                    "Position": "Chief Research and Development Officer",
+                    "Sector": "Food Manufacturing"
+                },
+                {
+                    "CommonSkills": [
+                        "Continuous Process Improvement ",
+                        "Budgeting ",
+                        "Document Control ",
+                        "Emergency Response Management ",
+                        "Systems Thinking ",
+                        "Strategy Development ",
+                        "Business Negotiation ",
+                        "Food Safety Management ",
+                        "Technical Presentation ",
+                        "Hazards and Risk Control, and Policy Management ",
+                        "Conflict Resolution ",
+                        "Good Manufacturing Practices Implementation ",
+                        "Risk Management ",
+                        "Process Validation ",
+                        "Business Performance Management ",
+                        "Innovation Management ",
+                        "Technical Report Writing ",
+                        "Quality System Management ",
+                        "Change Management ",
+                        "Project Management ",
+                        "Stakeholder Management ",
+                        "WSH Performance Management ",
+                        "Business Continuity Management "
+                    ],
+                    "JobId": "804",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 23,
+                    "MatchSkillsScore": 0.7419354838709677,
+                    "Position": "Quality Assurance and Quality Control Manage",
+                    "Sector": "Food Manufacturing"
+                }
+            ]
+        },
+        {
+            "grade": "6",
+            "results": [
+                {
+                    "CommonSkills": [
+                        "Budgeting ",
+                        "Business Negotiation ",
+                        "Innovation Management ",
+                        "Emergency Response Management ",
+                        "Change Management ",
+                        "Project Management ",
+                        "Systems Thinking ",
+                        "Conflict Resolution ",
+                        "Technical Presentation ",
+                        "Stakeholder Management ",
+                        "Green Manufacturing Design and Implementation ",
+                        "Strategy Development ",
+                        "Business Networking ",
+                        "WSH Performance Management ",
+                        "Risk Management ",
+                        "Business Environment Analysis ",
+                        "Business Continuity Management ",
+                        "Business Performance Management "
+                    ],
+                    "JobId": "791",
+                    "MatchCompetencyScore": 0,
+                    "MatchScore": 18,
+                    "MatchSkillsScore": 0.9473684210526315,
+                    "Position": "Chief Executive/Managing Director"
+                }
+            ]
+        }
+    ]
+}

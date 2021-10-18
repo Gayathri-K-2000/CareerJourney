@@ -1,0 +1,6 @@
+pandas
+numpy
+Flask
+gunicorn
+requests
+flask_httpauth
