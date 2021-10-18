@@ -51,7 +51,7 @@ def predict():
 
     dfseo= df.loc[df['JobID'] == sourcejobid]
     sjobtitle= str(list(set(dfseo["JobRole"]))[0])
-    resDicts=dict(JobId=sourcejobid, Position= sjobtitle, Sector= ssector, CommonSkills="0", MatchSkillsScore= 0, MatchCompetencyScore= 00, MatchScore= 00)
+    resDicts=dict(JobId=sourcejobid, Jobtitle= sjobtitle, Sector= ssector, CommonSkills="0", MatchSkillsScore= 0, MatchCompetencyScore= 00, MatchScore= 00)
     rs=[]
     rs.append(resDicts)
     out.append(dict(grade= sourceGrade,results= rs ))
